@@ -123,6 +123,9 @@
         document.getElementById("form-send-message").style.display="";
         document.getElementById("messages").style.display="";
         otherPerson = data.sender;
+        //for scroll dow in each msg
+        var messgs = document.getElementById("messages");
+        messgs.scrollTop = messgs.scrollHeight;
     });
 </script>
 </head>
@@ -233,7 +236,11 @@
           width: 88%;
         }
         
-        .chat_people{ overflow:hidden; clear:both;}
+        .chat_people{ 
+            overflow:hidden; 
+            clear:both;
+             float:left;
+                }
         .chat_list {
           border-bottom: 1px solid #c4c4c4;
           margin: 0;
@@ -273,9 +280,9 @@
             width: 57%;
             }
         .mesgs {
-          float: left;
+          float: right;
           padding: 30px 15px 0 25px;
-          width: 60%;
+          width: 50%;
         }
         
          .sent_msg p {
@@ -316,7 +323,7 @@
         }
         .messaging { padding: 0 0 50px 0;}
         .msg_history {
-          height: 516px;
+          height: 395px;
           overflow-y: auto;
         }
             </style>
