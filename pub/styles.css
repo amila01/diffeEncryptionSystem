@@ -1,0 +1,126 @@
+body{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    padding: 5px 10px;
+    color: #426696;
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+#title{
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      border-radius: 2rem 2rem 0 0;
+      z-index: 1;    
+}
+
+#chat {
+    min-width: 600px;
+}
+
+#chat-board{
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-window{
+    height: 400px;
+    overflow: auto;
+    
+}
+
+#output p{
+    color: #555;
+    display: flex;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    );
+    border-radius: 1rem;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+}
+
+#feedback p{
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#output strong{
+    color: #575ed8;
+}
+
+/*label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+*/
+
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Nunito;
+    font-size: 16px;
+    z-index: 3;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+
+    );
+}
+
+
+button{
+    background: linear-gradient(to right top, #44bba5, #22616b);
+    /*background: #65dfc9;*/
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius:0 0 2rem 2rem;
+}
+
+.disabled {
+    background: #7b81f5;
+    cursor: not-allowed;
+}
+
+input:active{
+    border: 0;
+}
+button:active{
+    border: 0;
+}
